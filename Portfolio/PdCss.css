@@ -17,3 +17,14 @@ button{
 .carousel-control-prev-icon, .carousel-control-next-icon {
     color: black;
 }
+ul{
+    padding-right: 50px;
+    font-family: Georgia;
+}
+
+li{
+    color: #c3c3c3;
+}
+modal{
+    font-family: "Segoe UI";
+}

@@ -1,0 +1,501 @@
+
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+
+        body{
+            color: #c3c3c3;
+            overflow-x:hidden ;
+        }
+
+
+        .layer{
+            background-image: url("assets/layer.svg");
+        }
+
+
+        #mynavbar{
+            z-index: 1;
+            position: fixed;
+        }
+      #space{
+          height: 580px;
+      }
+        #space img{
+
+            margin-top: 30px;
+        }
+        #section{
+            background-image: url("assets/mainBack.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 99%;
+            }
+
+    </style>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,600;0,800;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title></title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="mynavbar">
+    <div class="container-fluid">
+        <img src="assets/logo.png" width="80">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav me-auto" style="margin-left: 69.5vw">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section" style="color: #88B0D7;font-size: x-large" >Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#section2"  style="font-size: x-large">About</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3" style="font-size: x-large">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" style="font-size: x-large">Contact</a>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+    </div>
+</nav>
+<div id="fullpage">
+    <div class="section"  style="text-align: center" id="section">
+        <div id="space">
+           <div>
+               <h6 class="sec1Text1" style="color: white">Welcome to my Porfolio Website</h6>
+               <img src="assets/logo2.png" width="400" id="logo1" >
+           </div>
+            <img src="assets/logo1.png" width="100" id="logo2"style="transform: translateY(-260px)" >
+            <i  class="fa-solid fa-chevron-down" style="color: white;transform: translateX(-20px);scale: 2.5" id="down"></i>
+
+        </div>
+
+
+
+    </div>
+    <div class="section" id="section2">
+        <div  style="height: 580px">
+            <div id="about" >
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-sm-5">
+                            <img src="assets/pfp.png "style="width: 30vw;border-radius: 15px;margin-top: 100px" class="profilePic">
+                        </div>
+                        <div class="col-sm-7" style="padding-bottom: 100px">
+
+                            <h1  id="aboutDes" class="sec2Text1 " style="color: white;font-weight: bold;font-family: Georgia">About Me </h1>
+
+                            <p class="aboutDes"> Hello, I am Wei Siang.
+                                I'm a student skilled in UI/UX design, responsive web and mobile development, and business intelligence and agile methodlogy.  My expertise extends to developing responsive websites and user-friendly mobile apps. With a keen interest in business intelligence, I leverage analytics for informed decision-making. Eager to contribute my diverse skills and knowledge gained at Republic Polytechnic to the dynamic digital design and development landscape. </p>
+
+                            <div class="tab-titles" >
+                                <p class="tab-links active-link" onclick="opentab('skill1','skills')" id="skill1">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience1','experience')" id="experience1">Experience</p>
+                                <p class="tab-links" onclick="opentab('education1','education')" id="education1">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span>
+                                    <br>
+                                        Adobe XD, Photoshop, Illustrator
+                                    </li>
+                                    <li><span>Web Development</span>
+                                        <br>
+                                        HTML,CSS, Javascript, Boostrap, Fullpage, Anime, Jquery, SQL, PHP,
+                                    </li>
+                                    <li><span>Mobile Development</span>
+                                        <br>
+                                        Android Studio, JAVA, Flutter
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Skyline Catering(Tanyu Westgate)</span>
+                                        <br>
+                                        Service crew part time- 2 years<br>
+                                        Efficient communication, High stress tolerance
+                                    </li>
+                                    <li><span>R&ES(Ichiban Shushi)</span>
+                                        <br>
+                                        Service crew part time- 8 months
+
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Secondary</span>
+                                        <br>
+                                        Math:1 Science:2 Principle of Account:4 Chinese:5 English:6
+                                    </li>
+                                    <li><span>Republic Polytechnic</span>
+                                        <br>
+                                        Degital Design and Development:3.06 cgpa
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="section"id="section3" >
+        <div  style="height: 680px">
+            <div  style="margin-top: 80px" id="portfolio_coding">
+            <h6 style="text-align: center;color: white ;font-weight: bold;font-family: Georgia"  class="sec1Text1">Portfolio(Coding)</h6>
+                <div class="worklist fade" style="opacity: 0">
+
+                        <div class=" coding-laptop"  >
+                            <img src="assets/movie_Review/Main.png" style="width: 95%; border-radius: 15px;padding-left: 50px">
+                            <div class="layer" style="width: 89%;margin-left: 30px;justify-content: center">
+                                <h4 style="font-weight: bold">Movie Review website</h4>
+                                <a href="potfolio_laptop.html?value=0"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="coding-laptop"  style="padding-left: 50px">
+                            <img src="assets/Ward/Main.png" style="width: 82%; border-radius: 15px;">
+                            <div class="layer" style="width: 74%;margin-left: 50px">
+                                <h4 style="font-weight: bold">Ward management system</h4>
+                                <a href="potfolio_laptop.html?value=1"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="coding-laptop" >
+                            <img src="assets/SOI%20CLub/Main.png" style="width: 84%; border-radius: 15px;">
+                            <div class="layer"style="width: 90%">
+                                <h4 style="font-weight: bold">SOI Club App</h4>
+                                <a href="potfolio_laptop.html?value=2"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row fade" style="margin-top: 40px" >
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-4">
+                            <div class="coding-laptop"  >
+                                <img src="assets/Movie_Rating/Main.png" style="width: 42%; border-radius: 15px;height: 320px">
+                                <div class="layer" style="width: 210px;margin-left: 0px">
+                                    <h4 style="font-weight: bold">Movie Rating App</h4>
+                                    <a  href="portfolio_mobile.html?value=1"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="coding-laptop"  >
+                                <img src="assets/Weather/Main.png" style="width: 42%; border-radius: 15px;height: 320px">
+                                <div class="layer" style="width: 210px;">
+                                    <h4 style="font-weight: bold">Weather Mobile App</h4>
+                                    <a href="portfolio_mobile.html?value=0"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+<!--                   Design                 -->
+    <div class="section">
+    <div  style="height: 750px">
+        <div  style="margin-top: 80px" id="portfolio_design">
+            <h6 style="text-align: center;color: white ;font-weight: bold;font-family: Georgia"  class="sec1Text1">Portfolio(Design)</h6>
+            <div style="margin-left: 440px ;margin-top:40px;margin-bottom: 40px" >
+                <div class="coding-laptop fade"  >
+                    <img src="assets/e-commerce/Main.png" style="width: 60%; border-radius: 15px;height: 320px">
+                    <div class="layer" style="width: 652px;margin-left: 0px">
+                        <h4 style="font-weight: bold">E-commerce website</h4>
+                        <a href="potfolio_laptop.html?value=3"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="worklist fade">
+                    <div class="coding-laptop"  >
+                        <img src="assets/Collection%20of%20design/Main.png" style="width: 100%; border-radius: 15px;height: 320px">
+                        <div class="layer" style="width: 294px;">
+                            <h4 style="font-weight: bold">Collection of design</h4>
+                            <a ><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="coding-laptop"  >
+                        <img src="assets/Flight%20meal/Main.png" style="width: 100%; border-radius: 15px;height: 320px">
+                        <div class="layer" style="width: 294px;">
+                            <h4 style="font-weight: bold">Flight meal mobile app</h4>
+                            <a href="portfolio_mobile.html?value=2"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="coding-laptop"  >
+                        <img src="assets/Mobile%20learning/Main.png" style="width: 100%; border-radius: 15px;height: 320px">
+                        <div class="layer" style="width: 294px;">
+                            <h4 style="font-weight: bold">Mobile learning app</h4>
+                            <a href="portfolio_mobile.html?value=3"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="coding-laptop"  >
+                        <img src="assets/Mobile%20Portfolio/Main.png" style="width: 100%; border-radius: 15px;height: 320px">
+                        <div class="layer" style="width: 294px;">
+                            <h4 style="font-weight: bold">Mobile Portfolio App</h4>
+                            <a href="portfolio_mobile.html?value=4"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ff004f"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="section" id="#section4">
+        <div  style="height: 580px">
+            <div class="contact" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left fade">
+                            <h1 style="font-family: Georgia;font-weight: bold">Let's Contact</h1>
+                            <p style="font-weight: bold"><i class="fa-solid fa-envelope"></i>kangweisiang0@gmail.com</p>
+                            <p style="font-weight: bold"><i class="fa-solid fa-phone"></i>93702698</p>
+                            <div class="social-icons">
+                                <a href=" "><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="button"   ><a href="assets/resume.pdf" download="resume.pdf" style="text-decoration: none">Download Resume</a></div>
+                        </div>
+
+                        <div class="contact-right fade">
+                            <form>
+                                <input type="text" name="Name" placeholder="Name" required>
+                                <input type="email" name="Email" placeholder="Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message" style="height: 170px"></textarea>
+                                <button type="submit" class="formBtn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+
+
+
+
+
+
+
+    function opentab( tablink,tabname){
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+        document.getElementById(tablink).classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    anime({
+        targets:".button",
+        background: [
+            'linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000)',
+            'linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000) 600%'
+        ],
+        easing: 'linear',
+        duration: 20000,
+        loop: true
+    });
+    var sections=anime({
+
+        targets: '.sec1Text1',
+        scale:2.2,
+        duration: 2000
+    });
+    anime({
+        targets: "#logo1",
+        rotate: '360deg',
+        loop: true,
+        easing: 'linear',
+        duration: 6000
+    });
+    anime({
+        targets: "#logo2",
+        scale: [
+
+            { value:2.5 },
+            { value: 1 ,delay:0},
+        ],
+        duration: 6000,
+        easing: 'easeInOutQuad',
+        loop: true
+    });
+    anime({
+        targets: "#down",
+        translateY: [
+
+            { value:20 },
+            { value:0 ,delay:0},
+        ],
+        duration: 4000,
+        easing: 'easeInOutQuad',
+        loop: true
+    });
+    var fade1=anime({
+        targets: '.fade',
+        opacity: 1, // Fade in to full opacity
+        duration: 2000, // Duration of the animation in milliseconds
+        easing: 'easeInOutQuad' // Easing function for smoothness
+    });
+
+// section 2
+    const  aboutParagraph=document.getElementsByClassName("aboutDes");
+    const  about =document.getElementById("aboutDes");
+    var  aboutMe1=anime({
+
+        targets: aboutParagraph,
+        opacity: [0, 1],
+        duration: 4000,
+        easing: 'easeInOutQuad'
+
+    });
+    var  aboutMe1=anime({
+
+        targets: about,
+        opacity: [0, 1],
+        duration: 4000,
+        easing: 'easeInOutQuad'
+
+    });
+    var profilePic=anime({
+
+        targets: '.profilePic',
+        translateY: [
+
+            { value:30 },
+            { value:0 ,delay:0},
+        ],
+        duration: 4000,
+        easing: 'easeInOutQuad',
+        loop: true
+    });
+
+    $(document).ready(function () {
+
+
+
+        $('#fullpage').fullpage({ //initialize
+
+            //set options
+            sectionsColor: ['#1f1f21', '#1f1f21', '#FC6D6D','#88B0D7','#1f1f21'],
+            afterLoad: function (origin, destination, direction) {
+                if (destination.index == 1) {
+                    aboutMe1.play();
+
+
+                }
+                else  if (destination.index == 2){
+                    sections.play();
+                    fade1.play();
+                }
+                else  if (destination.index == 3){
+                    sections.play();
+                    fade1.play();
+
+                }
+                else  if (destination.index == 4){
+                    sections.play();
+
+
+                }
+                else  if (destination.index == 5){
+                    sections.play();
+
+
+                }
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
