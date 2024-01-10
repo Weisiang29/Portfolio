@@ -51,28 +51,31 @@
 </head>
 <body>
 
+
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="mynavbar">
     <div class="container-fluid">
         <img src="assets/logo.png" width="80">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" >
             <ul class="navbar-nav me-auto" style="margin-left: 69.5vw">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" style="color: #88B0D7;font-size: x-large">Home</a>
+                    <a class="nav-link" href="index.html#section" style="color: #88B0D7;font-size: x-large" >Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#contact" style="font-size: x-large">About</a>
+                    <a class="nav-link" href="index.html#section2" style="font-size: x-large">About</a>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="PortfolioPage.html" style="font-size: x-large">Portfolio</a>
+                    <a class="nav-link" href="index.html#section3" style="font-size: x-large">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="PortfolioPage.html" style="font-size: x-large">Contact</a>
+                    <a class="nav-link" href="index.html#contact" style="font-size: x-large">Contact</a>
                 </li>
             </ul>
+
+
 
 
         </div>
@@ -145,7 +148,12 @@
         var divImage = document.createElement("div");
 
         newImage.src = project.carousell[i];
-        newImage.className = "d-block w-100";
+        if(value==4){
+            newImage.className = "d-block w-95";
+        }
+        else{
+            newImage.className = "d-block w-100";
+        }
 
         divImage.className = "carousel-item align-items-center";
         if (i === 0) {

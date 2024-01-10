@@ -68,15 +68,27 @@ var laptop4 ={
 
 };
 
+
 for (var i=1; i <= 11; i++) {
   let imageUrl ="assets/e-commerce/pic"+i+".png";
   laptop4.carousell.push(imageUrl);
 }
+
+
+var design ={
+  "title":"collection of design"
+  ,"description":"A collection of design that is applied principle of designs such as color contrast, typography, grid system, balance, unity and more"
+  ,"skills":"Photoshop, Illustrator",
+  "images":"assets/laptop.png",
+  "device":"laptop",
+  'carousell':['assets/Collection of design/pic1.png','assets/Collection of design/pic2.png','assets/Collection of design/pic3.png','assets/Collection of design/pic4.png','assets/Collection of design/pic5.png']
+
+};
 laptopList.push(laptop1);
 laptopList.push(laptop2);
 laptopList.push(laptop3);
 laptopList.push(laptop4);
-
+laptopList.push(design);
 
 var phone1 ={
   "id":0,
@@ -149,17 +161,6 @@ phoneList.push(phone5);
 
 
 
-var design ={
-  "id":1,
-  "category":"design",
-  "title":"collection of design"
-  ,"description":"a shoe shopping app"
-  ,"skills":"Photoshop, Illustrator",
-  "images":"assets/laptop.png",
-  "device":"laptop",
-  'carousell':['assets/php.png','assets/flutter.png','assets/boostrap.png']
-
-};
 
 
 
